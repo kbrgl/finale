@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Finale",
+    "subtitle": "by Kabir Goel",
+    "rules": [
+      "Hot reloading",
+      "Author questions in Markdown"
+    ]
+  },
+
+  "questions": [
+    {
+      "text" : "Is Finale awesome?",
+      "answer": "Yes."
+    },
+    {
+      "text": "Should you use it?",
+      "answer": "Totally."
+    }
+  ]
+}

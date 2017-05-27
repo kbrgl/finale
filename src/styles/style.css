@@ -1,0 +1,112 @@
+body {
+  font-family: -apple-system,
+               BlinkMacSystemFont,
+               'Segoe UI',
+               Roboto,
+               Oxygen,
+               Ubuntu,
+               Cantarell,
+               'Fira Sans',
+               'Droid Sans',
+               'Helvetica Neue',
+               sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  margin-bottom: 0.3em;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper .content {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.arrow, .lights-toggle {
+  height: 40px;
+  width: 40px;
+  font-size: 1.5em;
+  position: absolute;
+  cursor: pointer;
+}
+
+.arrow.down {
+  bottom: 20px;
+}
+
+.arrow.up {
+  top: 25px;
+}
+
+.lights-toggle {
+  bottom: 20px;
+  right: 20px;
+}
+
+.app-root {
+  transition: all .4s ease-in-out;
+}
+
+.night-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+.night-mode button {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.night-mode button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.night-mode td {
+  border-color: #fff;
+}
