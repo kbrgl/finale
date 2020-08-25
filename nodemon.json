@@ -1,5 +1,0 @@
-{
-  "ignore": ["src/dist", "data/data.json"],
-  "exec": "yarn serve",
-  "ext": "css, js, html, json"
-}
